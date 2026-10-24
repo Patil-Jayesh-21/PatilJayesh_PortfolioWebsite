@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jayesh Patil | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Patil Jayesh Chandrakant: skills, projects and contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="brand" href="#home">Jayesh Patil</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks" class="links" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Patil Jayesh Chandrakant</h1>
+        <p class="tagline">Aspiring software developer who builds clean, responsive web experiences.</p>
+        <p class="bio">I'm a student learning full-stack web development and version control with Git and GitHub. I enjoy turning ideas into small, working projects and learning something new from each one.</p>
+        <div class="actions">
+          <a class="btn primary" href="Patil_Jayesh_Resume_Edited.pdf" download="Jayesh_Patil_Resume.pdf">Download résumé</a>
+          <a class="btn ghost" href="#projects">See my projects</a>
+        </div>
+        <p class="enrol">Enrolment No. 202503103510431</p>
+      </div>
+      <div class="photo-wrap">
+        <img src="photo.jpg" alt="Portrait of Jayesh Patil" id="photo" width="320" height="320">
+        <div class="initials" id="initials" aria-hidden="true">JP</div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <p class="lead">What I work with, and how comfortable I am with it.</p>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Technical</h3>
+          <ul class="bars">
+            <li><span>HTML5</span><div class="bar"><i data-level="90"></i></div><b>90%</b></li>
+            <li><span>CSS3</span><div class="bar"><i data-level="80"></i></div><b>80%</b></li>
+            <li><span>JavaScript</span><div class="bar"><i data-level="70"></i></div><b>70%</b></li>
+            <li><span>Git &amp; GitHub</span><div class="bar"><i data-level="75"></i></div><b>75%</b></li>
+            <li><span>Python</span><div class="bar"><i data-level="65"></i></div><b>65%</b></li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Soft skills</h3>
+          <ul class="bars">
+            <li><span>Communication</span><div class="bar"><i data-level="85"></i></div><b>85%</b></li>
+            <li><span>Teamwork</span><div class="bar"><i data-level="90"></i></div><b>90%</b></li>
+            <li><span>Problem solving</span><div class="bar"><i data-level="80"></i></div><b>80%</b></li>
+            <li><span>Time management</span><div class="bar"><i data-level="75"></i></div><b>75%</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <h2>Projects</h2>
+      <p class="lead">A few things I've built. Each one links to its code on GitHub.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Shop-Management-System</h3>
+
+          <p class="tags">HTML · CSS · JavaScript</p>
+          <a href="https://github.com/Patil-Jayesh-21/Shop-Management-System" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+        <article class="card">
+          <h3>Electronic Shop Management System</h3>
+          <p>A System that digitalize all the process and progress of the Shop</p>
+          <p class="tags">PHP · SQLite</p>
+          <a href="https://github.com/Patil-Jayesh-21/Electronic-Shop-Management-System" target="_blank" rel="noopener">View on GitHub</a>
+        </article>
+       
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="lead">Send me a message, or reach me on any of the links below.</p>
+      <div class="contact-grid">
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <p id="formStatus" class="status" role="status" aria-live="polite"></p>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+        <div class="quick">
+          <h3>Find me online</h3>
+          <ul>
+            <li><a href="https://github.com/Patil-Jayesh-21" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/jayesh-patil-046927446?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:25amtics431@gmail.com">25amtics431@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> Patil Jayesh Chandrakant</p>
+    <p class="social">
+      <a href="https://github.com/Patil-Jayesh-21" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/jayesh-patil-046927446?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:25amtics431@gmail.com">Email</a>
+    </p>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
